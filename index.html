@@ -40,6 +40,59 @@
 
             </div>
         </div>
+
+    <!-- ESTE ES RESERVE MODAL======================== -->
+
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h3 class="modal-title">Reserve a Campsite</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                                <div class="col">
+                                    <select name="numCampers" id="numCampers" class="form-control">
+                                        <option selected>Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <div class="col-sm-6">
+                                    <input type="date" class="form-control" id="date" name="date" placeholder="Date" />
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+
+
+                                <button type="button" class="btn btn-secondary mr-1 " data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ================FIN RESERVE MODAL ================================================ -->
+
+
+
+
     </header>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
@@ -68,6 +121,9 @@
             </div>
         </div>
     </nav>
+
+    <!-- ESTE ES EL EL LOGIN MODAL======================== -->
+
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -107,7 +163,7 @@
             </div>
         </div>
     </div>
-
+<!-- ================FIN LOGIN MODAL ================================================ -->
 
     <div class="container">
         <div class="row row-content">
@@ -213,8 +269,8 @@
                 </div>
             </div>
         </div>
-
-        <div class="row row-content">
+<!-- =======este es el calendario=================== -->
+        <!-- <div class="row row-content">
             <div class="col-sm-6 mx-auto">
                 <div class="card">
                     <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
@@ -251,7 +307,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+<!-- ======================fin calendario========== -->
+
     </div>
     <footer class="site-footer">
         <div class="container">
