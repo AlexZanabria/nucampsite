@@ -180,6 +180,8 @@
     <div class="container">
         <div class="row row-content">
             <div class="col-md-8 mx-auto">
+                <div class="carousel slide" data-ride="carousel"
+
                 <ol class="carousel-indicators">
                     <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#homeCarousel" data-slide-to="1"></li>
@@ -334,14 +336,30 @@
         $(function () {
             $(".carousel").carousel( { interval: 2000 } );
             // $(".carousel").carousel({ interval: 2000, pause: "false" });
-            $("#carouselPause").click(function () {
-                $(".carousel").carousel("pause");
-            });
-            $("#carouselPlay").click(function () {
-                $(".carousel").carousel("cycle");
-            });
-        });
+        //     $("#carouselPause").click(function () {
+        //         $(".carousel").carousel("pause");
+        //     });
+        //     $("#carouselPlay").click(function () {
+        //         $(".carousel").carousel("cycle");
+        //     });
+        // });
+        $("#carouselButton").click(function(){
+    if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+        $(".carousel").carousel("pause");
+        $("#carouselButton").children("i").removeClass("fa-pause");
+        $("#carouselButton").children("i").addClass("fa-play");
+    } else {
+        $(".carousel").carousel("cycle");
+        $("#carouselButton").children("i").removeClass("fa-play");
+        $("#carouselButton").children("i").addClass("fa-pause"); 
+    }
+});
+        })
     </script>
+
+
+
+
 
 
 </body>
